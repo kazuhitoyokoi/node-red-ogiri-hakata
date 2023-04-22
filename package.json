@@ -1,0 +1,19 @@
+{
+    "name": "node-red-ogiri-hakata",
+    "description": "Raspberry PiのSense HATに天気情報を表示",
+    "version": "0.0.1",
+    "dependencies": {
+        "node-red": "*",
+        "node-red-node-openweathermap": "0.5.1",
+        "node-red-node-pi-sense-hat-simulator": "0.1.0"
+    },
+    "scripts": {
+        "start": "node-red -D editorTheme.tours=false"
+    },
+    "node-red": {
+        "settings": {
+            "flowFile": "flows.json",
+            "credentialsFile": "flows_cred.json"
+        }
+    }
+}

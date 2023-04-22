@@ -1,0 +1,340 @@
+[
+    {
+        "id": "d39855fe4a029e6e",
+        "type": "tab",
+        "label": "フロー 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c21f53590669df2a",
+        "type": "inject",
+        "z": "d39855fe4a029e6e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "120",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 120,
+        "wires": [
+            [
+                "23b35f56f197e4a3"
+            ]
+        ]
+    },
+    {
+        "id": "7b310f1b167527eb",
+        "type": "change",
+        "z": "d39855fe4a029e6e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "data.description",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 420,
+        "wires": [
+            [
+                "8b346a30.651a88"
+            ]
+        ]
+    },
+    {
+        "id": "17f15fa70256a93d",
+        "type": "change",
+        "z": "d39855fe4a029e6e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "data",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 490,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4fbe36aa06f82a2b",
+        "type": "inject",
+        "z": "d39855fe4a029e6e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "10",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 320,
+        "wires": [
+            [
+                "9b89f05656087d6c"
+            ]
+        ]
+    },
+    {
+        "id": "9b89f05656087d6c",
+        "type": "switch",
+        "z": "d39855fe4a029e6e",
+        "name": "",
+        "property": "data.weather",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Clear",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Clouds",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Rain",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 4,
+        "x": 190,
+        "y": 420,
+        "wires": [
+            [
+                "126f43be165ab4f2"
+            ],
+            [
+                "77462f2d816e9512"
+            ],
+            [
+                "0a904d791b96075d"
+            ],
+            [
+                "f94afdcc244b36db"
+            ]
+        ]
+    },
+    {
+        "id": "5856c8cd80e8b5fd",
+        "type": "debug",
+        "z": "d39855fe4a029e6e",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 480,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "126f43be165ab4f2",
+        "type": "change",
+        "z": "d39855fe4a029e6e",
+        "name": "red",
+        "rules": [
+            {
+                "t": "set",
+                "p": "color",
+                "pt": "msg",
+                "to": "red",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 330,
+        "y": 360,
+        "wires": [
+            [
+                "7b310f1b167527eb"
+            ]
+        ]
+    },
+    {
+        "id": "96ed591cdd41a136",
+        "type": "comment",
+        "z": "d39855fe4a029e6e",
+        "name": "定期的に天気情報を取得し、コンテキストに保存",
+        "info": "",
+        "x": 240,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "0a904d791b96075d",
+        "type": "change",
+        "z": "d39855fe4a029e6e",
+        "name": "blue",
+        "rules": [
+            {
+                "t": "set",
+                "p": "color",
+                "pt": "msg",
+                "to": "blue",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 330,
+        "y": 440,
+        "wires": [
+            [
+                "7b310f1b167527eb"
+            ]
+        ]
+    },
+    {
+        "id": "c651bd89137f7c33",
+        "type": "comment",
+        "z": "d39855fe4a029e6e",
+        "name": "コンテキストを読み込み、天気毎に異なる色を付けてSense Hatに説明文を表示",
+        "info": "",
+        "x": 340,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "77462f2d816e9512",
+        "type": "change",
+        "z": "d39855fe4a029e6e",
+        "name": "white",
+        "rules": [
+            {
+                "t": "set",
+                "p": "color",
+                "pt": "msg",
+                "to": "white",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 330,
+        "y": 400,
+        "wires": [
+            [
+                "7b310f1b167527eb"
+            ]
+        ]
+    },
+    {
+        "id": "f94afdcc244b36db",
+        "type": "change",
+        "z": "d39855fe4a029e6e",
+        "name": "green",
+        "rules": [
+            {
+                "t": "set",
+                "p": "color",
+                "pt": "msg",
+                "to": "green",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 330,
+        "y": 480,
+        "wires": [
+            [
+                "7b310f1b167527eb"
+            ]
+        ]
+    },
+    {
+        "id": "23b35f56f197e4a3",
+        "type": "openweathermap",
+        "z": "d39855fe4a029e6e",
+        "name": "",
+        "wtype": "current",
+        "lon": "",
+        "lat": "",
+        "city": "Fukuoka",
+        "country": "JP",
+        "language": "en",
+        "x": 320,
+        "y": 120,
+        "wires": [
+            [
+                "17f15fa70256a93d",
+                "5856c8cd80e8b5fd"
+            ]
+        ]
+    },
+    {
+        "id": "8b346a30.651a88",
+        "type": "rpi-sensehatsim out",
+        "z": "d39855fe4a029e6e",
+        "name": "",
+        "x": 540,
+        "y": 320,
+        "wires": []
+    }
+]
