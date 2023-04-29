@@ -38,3 +38,9 @@ B -- フローをダウンロード --> C(Raspberry Pi)
 ```
 
 Raspberry Pi上では、Sense HATシミュレータのノードをSense HAT実機用のノードに置き換えた。
+
+
+
+
+https://user-images.githubusercontent.com/20310935/235315308-5e9b4440-fa07-487e-b8af-918a7924e2bf.mp4
+
