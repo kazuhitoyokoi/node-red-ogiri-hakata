@@ -40,7 +40,7 @@ Sense HATのLEDに情報を表示する度に、OpenWeather APIにアクセス�
 
 https://flows.nodered.org/node/node-red-node-pi-sense-hat-simulator
 
-上手くフローが動作すると下の様に、シミュレータの画面に天気の情報が表示された。
+上手くフローが動作すると下の様に、シミュレータの画面に天気の情報を表示できた。
 
 https://user-images.githubusercontent.com/20310935/233776400-85e7d697-5995-462f-9796-5186ccbf0c97.mp4
 
