@@ -5,7 +5,7 @@
 
 <img src="https://1.bp.blogspot.com/-9O3txb7OtvQ/UbVu8wEe3DI/AAAAAAAAUkA/DOA2jrDfVH8/s800/bonodori.png" width="50%"><img src="https://2.bp.blogspot.com/-04yGTd8fSnA/U9y_m5vpsrI/AAAAAAAAjfw/nVqHQN_t9g4/s800/tenki_mark03_gouu.png" width="50%">
 
-晴天か雨天かを表示しておけるデバイスがあると便利そう。
+晴天か雨天かを常時、表示しておけるデバイスがあると便利そう。
 
 ## 開発で使用した機材
 Node-REDが動く代表的なデバイスとして、Raspberry Piを使用。
