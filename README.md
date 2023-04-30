@@ -15,11 +15,12 @@ Node-REDからOpenWeatherへのアクセスには、Node-REDプロジェクト�
 https://flows.nodered.org/node/node-red-node-openweathermap
 
 ## 開発したフロー
+Sense HATのLEDに情報を表示する度に、OpenWeather APIにアクセスするとAPIの使用回数の上限に達してしまう。
+これを避けるため、取得した情報をコンテキストに保存しておく様にし、LEDに表示する際はコンテキストの情報を使用した。
+
 ![](https://raw.githubusercontent.com/kazuhitoyokoi/node-red-ogiri-hakata/main/flow.png)
 [![](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/kazuhitoyokoi/node-red-ogiri-hakata?embed=1&hideExplorer=1&hideNavigation=1&view=preview)
 
-Sense HATのLEDに情報を表示する度に、OpenWeather APIにアクセスするとAPIの使用回数の上限に達してしまう。
-これを避けるため、取得した情報をコンテキストに保存しておく様にし、LEDに表示する際はコンテキストの情報を使用した。
 LEDの色は、晴れの時に赤、曇りの時に白、雨の時に青、その他は緑になる様にした。
 
 ## Sense HATエミュレータでの動作
