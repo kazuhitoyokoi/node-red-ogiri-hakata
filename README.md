@@ -1,10 +1,16 @@
 # Raspberry PiのSense HATに天気情報を表示
 
-## イベント開催には、天気の情報が重要
+## 背景
+イベント開催には、天気の情報が重要
 <img src="https://1.bp.blogspot.com/-9O3txb7OtvQ/UbVu8wEe3DI/AAAAAAAAUkA/DOA2jrDfVH8/s800/bonodori.png" width="50%"><img src="https://2.bp.blogspot.com/-04yGTd8fSnA/U9y_m5vpsrI/AAAAAAAAjfw/nVqHQN_t9g4/s800/tenki_mark03_gouu.png" width="50%">
+晴天か雨天かを手軽に確認できるデバイスがあると便利そう。
 
-## ラズパイとSense HATのLEDを用いて天気情報を伝える仕組みを開発
+## 開発で使用した物
+Node-REDが動く代表的なデバイスとして、Raspberry Piを使用。
+
 <img src="https://3.bp.blogspot.com/-Wl5LVBDviR4/Vz8HzNnjSEI/AAAAAAAA6tY/BU6AXKS3mj4yjF8nhncl5Ai4cdLYHPrZACLcB/s800/computer_single_board.png" width="50%"><img src="https://images.prismic.io/rpf-products/a222a1d657906db95efbca8b8467037fa1a89def_sense-hat-1733x1080-1-1733x1080.jpg" width="50%">
+
+ラズパイとSense HATのLEDを用いて天気情報を伝える仕組みを開発
 
 ## 使用した天気情報提供サービス「OpenWeather」
 天気情報を取得するため、[OpenWeather](https://openweathermap.org/)というサービスを利用。
@@ -28,7 +34,7 @@ LEDの色は、晴れの時に赤、曇りの時に白、雨の時に青、そ�
 
 https://flows.nodered.org/node/node-red-node-pi-sense-hat-simulator
 
-上手くフローが動作すると下の様に、シミュレータの画面に天気の情報が表示される。
+上手くフローが動作すると下の様に、シミュレータの画面に天気の情報が表示された。
 
 https://user-images.githubusercontent.com/20310935/233776400-85e7d697-5995-462f-9796-5186ccbf0c97.mp4
 
