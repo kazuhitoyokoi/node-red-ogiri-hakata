@@ -12,7 +12,9 @@ Node-REDが動く代表的なデバイスとして、Raspberry Piを使用。
 
 <img src="https://3.bp.blogspot.com/-Wl5LVBDviR4/Vz8HzNnjSEI/AAAAAAAA6tY/BU6AXKS3mj4yjF8nhncl5Ai4cdLYHPrZACLcB/s800/computer_single_board.png" width="50%"><img src="https://images.prismic.io/rpf-products/a222a1d657906db95efbca8b8467037fa1a89def_sense-hat-1733x1080-1-1733x1080.jpg" width="50%">
 
-ラズパイとSense HATのLEDを用いて天気情報を伝える仕組みを開発
+8x8個のカラーLEDが搭載されたSense HATをRaspberry PiのGPIO端子に接続。
+
+これら機材を用いて天気情報を伝える仕組みを開発した。
 
 ## 使用した天気情報提供サービス「OpenWeather」
 天気情報を取得するため、[OpenWeather](https://openweathermap.org/)というサービスを利用。
