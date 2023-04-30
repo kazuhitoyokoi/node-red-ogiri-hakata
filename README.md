@@ -20,7 +20,7 @@ Node-REDが動く代表的なデバイスとして、Raspberry Piを使用。
 天気情報を取得するため、[OpenWeather](https://openweathermap.org/)というサービスを利用。
 本サービスはアカウントを作成すると、無料で1000回/日だけ天気情報を取得可能。
 
-Node-REDからOpenWeatherへのアクセスには、Node-REDプロジェクトが提供している下記ノードを使用。
+Node-REDからOpenWeatherへのアクセスには、Node-REDプロジェクトが提供している下記OpenWeatherMapノードを使用。
 
 https://flows.nodered.org/node/node-red-node-openweathermap
 
