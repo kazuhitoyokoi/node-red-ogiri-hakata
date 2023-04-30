@@ -1,8 +1,10 @@
 # Raspberry PiのSense HATに天気情報を表示
 
 ## 背景
-イベント開催には、天気の情報が重要
+イベント開催には、天気の情報が重要。
+
 <img src="https://1.bp.blogspot.com/-9O3txb7OtvQ/UbVu8wEe3DI/AAAAAAAAUkA/DOA2jrDfVH8/s800/bonodori.png" width="50%"><img src="https://2.bp.blogspot.com/-04yGTd8fSnA/U9y_m5vpsrI/AAAAAAAAjfw/nVqHQN_t9g4/s800/tenki_mark03_gouu.png" width="50%">
+
 晴天か雨天かを手軽に確認できるデバイスがあると便利そう。
 
 ## 開発で使用した物
