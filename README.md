@@ -25,7 +25,7 @@ Node-REDからOpenWeatherへのアクセスには、Node-REDプロジェクト�
 https://flows.nodered.org/node/node-red-node-openweathermap
 
 ## 開発したフロー
-定期的に天気情報を取得して、最新の天気情報をLEDに表示し続けるフローを開発した。
+定期的に天気情報を取得して、最新の天気情報の文字列をLEDに表示し続けるフローを開発した。
 
 ![](https://raw.githubusercontent.com/kazuhitoyokoi/node-red-ogiri-hakata/main/flow.png)
 [![](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/kazuhitoyokoi/node-red-ogiri-hakata?embed=1&hideExplorer=1&hideNavigation=1&view=preview)
