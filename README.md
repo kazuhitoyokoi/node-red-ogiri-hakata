@@ -19,12 +19,15 @@ https://flows.nodered.org/node/node-red-node-openweathermap
 [![](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/kazuhitoyokoi/node-red-ogiri-hakata?embed=1&hideExplorer=1&hideNavigation=1&view=preview)
 
 Sense HATのLEDに情報を表示する度に、OpenWeather APIにアクセスするとAPIの使用回数の上限に達してしまう。
-これを避けるため、取得した情報をコンテキストに保存しておく様にし、LEDに表示する際はコンテキストの情報を使用する。
+これを避けるため、取得した情報をコンテキストに保存しておく様にし、LEDに表示する際はコンテキストの情報を使用した。
+LEDの色は、晴れの時に赤、曇りの時に白、雨の時に青、その他は緑になる様にした。
 
 ## Sense HATエミュレータでの動作
-Sense HATシミュレータのノードを用いてPC上でフローを開発。上手く動作すると下の様に、天気の情報が表示される。
+手軽に開発を始めるため、Sense HATシミュレータの下記ノードを用いてPC上でフローを開発。
 
 https://flows.nodered.org/node/node-red-node-pi-sense-hat-simulator
+
+上手くフローが動作すると下の様に、シミュレータの画面に天気の情報が表示される。
 
 https://user-images.githubusercontent.com/20310935/233776400-85e7d697-5995-462f-9796-5186ccbf0c97.mp4
 
