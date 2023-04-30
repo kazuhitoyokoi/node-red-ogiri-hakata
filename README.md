@@ -7,7 +7,7 @@
 
 晴天か雨天かを表示しておけるデバイスがあると便利そう。
 
-## 開発で使用した物
+## 開発で使用した機材
 Node-REDが動く代表的なデバイスとして、Raspberry Piを使用。
 
 <img src="https://3.bp.blogspot.com/-Wl5LVBDviR4/Vz8HzNnjSEI/AAAAAAAA6tY/BU6AXKS3mj4yjF8nhncl5Ai4cdLYHPrZACLcB/s800/computer_single_board.png" width="50%"><img src="https://images.prismic.io/rpf-products/a222a1d657906db95efbca8b8467037fa1a89def_sense-hat-1733x1080-1-1733x1080.jpg" width="50%">
