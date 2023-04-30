@@ -8,19 +8,19 @@
 晴天か雨天かを常時、表示しておけるデバイスがあると便利そう。
 
 ## 開発で使用した機材
-Node-REDが動く代表的なデバイスとして、Raspberry Piを使用。
+Node-REDが動く代表的なデバイスとして、Raspberry Piを使用した。
 
 <img src="https://3.bp.blogspot.com/-Wl5LVBDviR4/Vz8HzNnjSEI/AAAAAAAA6tY/BU6AXKS3mj4yjF8nhncl5Ai4cdLYHPrZACLcB/s800/computer_single_board.png" width="50%"><img src="https://images.prismic.io/rpf-products/a222a1d657906db95efbca8b8467037fa1a89def_sense-hat-1733x1080-1-1733x1080.jpg" width="50%">
 
-8x8個のカラーLEDが搭載されたSense HATをRaspberry PiのGPIO端子に接続。
+8x8個のカラーLEDが搭載されたSense HATをRaspberry PiのGPIO端子に接続した。
 
 これら機材を用いて天気情報を伝える仕組みを開発した。
 
 ## 使用した天気情報提供サービス「OpenWeather」
-天気情報を取得するため、[OpenWeather](https://openweathermap.org/)というサービスを利用。
+天気情報を取得するため、[OpenWeather](https://openweathermap.org/)というサービスを利用した。
 本サービスはアカウントを作成すると、無料で1000回/日だけ天気情報を取得可能。
 
-Node-REDからOpenWeatherへのアクセスには、Node-REDプロジェクトが提供している下記OpenWeatherMapノードを使用。
+Node-REDからOpenWeatherへのアクセスには、Node-REDプロジェクトが提供している下記OpenWeatherMapノードを使用した。
 
 https://flows.nodered.org/node/node-red-node-openweathermap
 
@@ -36,7 +36,7 @@ Sense HATのLEDに情報を表示する度に、OpenWeather APIにアクセス�
 これを避けるため、取得した情報をコンテキストに保存しておく様にし、LEDに表示する際はコンテキストの情報を使用した。
 
 ## Sense HATエミュレータでの動作
-手軽に開発を始めるため、Sense HATシミュレータの下記ノードを用いてPC上でフローを開発。
+手軽に開発を始めるため、Sense HATシミュレータの下記ノードを用いてPC上でフローを開発した。
 
 https://flows.nodered.org/node/node-red-node-pi-sense-hat-simulator
 
@@ -46,7 +46,7 @@ https://user-images.githubusercontent.com/20310935/235351040-cb920f5d-d25b-4b67-
 
 ## Sense HAT実機での動作
 シミュレータで期待通り動作することを確認した後、Git連携機能を利用してGitHubリポジトリにフローを置いた。
-その後、Raspberry Piでフローをダウンロードして、Sense HAT実機でも同じ様に動作するか確認。
+その後、Raspberry Piでフローをダウンロードして、Sense HAT実機でも同じ様に動作するか確認した。
 Raspberry Pi上では、Sense HATシミュレータのノードをSense HAT実機用のノードに置き換えた。
 
 ```mermaid
