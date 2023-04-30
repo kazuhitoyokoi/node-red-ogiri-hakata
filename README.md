@@ -42,7 +42,7 @@ https://flows.nodered.org/node/node-red-node-pi-sense-hat-simulator
 
 上手くフローが動作すると下の様に、シミュレータの画面に天気の情報を表示できた。
 
-https://user-images.githubusercontent.com/20310935/233776400-85e7d697-5995-462f-9796-5186ccbf0c97.mp4
+https://user-images.githubusercontent.com/20310935/235351040-cb920f5d-d25b-4b67-84ec-b7060fdae4c8.mp4
 
 ## Sense HAT実機での動作
 シミュレータで期待通り動作することを確認した後、Git連携機能を利用してGitHubリポジトリにフローを置いた。
@@ -57,7 +57,4 @@ B -- フローをダウンロード --> C(Raspberry Pi)
 
 実機でも上手く天気情報が表示されました！
 
-https://user-images.githubusercontent.com/20310935/235315974-e0c3bb9c-2624-4ae7-b74c-a0d8ef865093.mp4
-
-
-
+https://user-images.githubusercontent.com/20310935/235351023-06600481-37dd-40f1-bfaa-80c37bc1b393.mp4
