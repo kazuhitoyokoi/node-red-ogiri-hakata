@@ -68,4 +68,4 @@ https://user-images.githubusercontent.com/20310935/235351023-06600481-37dd-40f1-
 コンテキストの保存先は、メモリやファイル以外を利用することもできます。例えばNode-REDプロジェクトでは以下のプラグインを公開しています。
 
 - [SQLiteプラグイン](https://github.com/node-red/node-red-context-pouchdb/tree/5c210fc88dcd577bd8fcbcbb556ba57e376cd38d) : SQLiteにコンテキストを保存できるプラグイン。ファイルシステム上に永続化されたコンテキストを効率良く取得、保存できる。
-- [Redisプラグイン](https://github.com/node-red/node-red-context-redis) : コンテキストをRedisに保存できるプラグイン。複数のRaspberry Pi上のフローでコンテキストを共有できる。
+- [Redisプラグイン](https://github.com/node-red/node-red-context-redis) : コンテキストをRedisに保存できるプラグイン。複数のRaspberry Pi上のフロー間でコンテキストを共有できる。
