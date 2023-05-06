@@ -50,8 +50,8 @@ https://user-images.githubusercontent.com/20310935/235351040-cb920f5d-d25b-4b67-
 
 ```mermaid
 graph LR
-A(ローカルPC<br>+ Sense HATシミュレータ) -- フローをアップロード --> B[(本GitHub<br>リポジトリ)]
-B -- フローをダウンロード --> C(Raspberry Pi<br>+ Sense HAT実機)
+A(ローカルPC<br>+ Sense HAT<br>シミュレータ) -- フローを<br>アップロード --> B[(本GitHub<br>リポジトリ)]
+B -- フローを<br>ダウンロード --> C(Raspberry Pi<br>+ Sense HAT実機)
 ```
 
 Raspberry Pi上では、Sense HATシミュレータのノードをSense HAT実機用のノードに置き換えた。
