@@ -33,7 +33,7 @@ https://flows.nodered.org/node/node-red-node-openweathermap
 LEDの色は、晴れの時に赤、曇りの時に白、雨の時に青、その他の天気の時に緑になる様にした。
 
 もしSense HATのLEDに情報を表示する度にOpenWeather APIにアクセスするとAPIの使用回数の上限に達してしまう。
-これを避けるため、取得した情報をコンテキストに保存しておく様にし、LEDに表示する際はコンテキストの情報を使用した。
+これを避けるため、取得した情報をコンテキストに保存しておく様にし、LEDに表示する際はコンテキストのデータを使用した。
 
 ## Sense HATシミュレータでの動作
 手軽に開発を始めるため、Sense HATシミュレータを利用できる下記ノードを用いてローカルPC上でフローを開発した。
@@ -63,3 +63,7 @@ Raspberry Pi上では、Sense HATシミュレータのノードをSense HAT実�
 フローを読み込むと、実機でも上手く天気情報が表示されました！
 
 https://user-images.githubusercontent.com/20310935/235351023-06600481-37dd-40f1-bfaa-80c37bc1b393.mp4
+
+<!-- ## ご参考: その他のコンテキストプラグイン
+- [SQLiteプラグイン](https://github.com/node-red/node-red-context-pouchdb/tree/5c210fc88dcd577bd8fcbcbb556ba57e376cd38d) : SQLiteにコンテキストを保存できるプラグイン。ファイルシステム上に永続化されたコンテキストを効率良く取得、保存ができる。
+- [Redisプラグイン](https://github.com/node-red/node-red-context-redis) : コンテキストをRedisに保存できるプラグイン。1つのNode-REDが保存したコンテキストを複数のRaspberry Piが読み取る構成も実現できる。 -->
