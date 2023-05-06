@@ -35,8 +35,8 @@ LEDの色は、晴れの時に赤、曇りの時に白、雨の時に青、そ�
 もしSense HATのLEDに情報を表示する度にOpenWeather APIにアクセスするとAPIの使用回数の上限に達してしまう。
 これを避けるため、取得した情報をコンテキストに保存しておく様にし、LEDに表示する際はコンテキストの情報を使用した。
 
-## Sense HATエミュレータでの動作
-手軽に開発を始めるため、Sense HATシミュレータを利用できる下記ノードを用いてPC上でフローを開発した。
+## Sense HATシミュレータでの動作
+手軽に開発を始めるため、Sense HATシミュレータを利用できる下記ノードを用いてローカルPC上でフローを開発した。
 
 https://flows.nodered.org/node/node-red-node-pi-sense-hat-simulator
 
@@ -45,20 +45,20 @@ https://flows.nodered.org/node/node-red-node-pi-sense-hat-simulator
 https://user-images.githubusercontent.com/20310935/235351040-cb920f5d-d25b-4b67-84ec-b7060fdae4c8.mp4
 
 ## Sense HAT実機での動作
-シミュレータで期待通り動作することを確認した後、Git連携機能を利用してGitHubリポジトリにフローをアップロードした。
+ローカルPC上のSense HATシミュレータで期待通り動作することを確認した後、Git連携機能を利用してGitHubリポジトリにフローをアップロードした。
 その後、Raspberry Piでフローをダウンロードして、Sense HAT実機でも同じ様に動作するか確認した。
 
 ```mermaid
 graph LR
-A(ローカルPC) -- フローをアップロード --> B[(本GitHub<br>リポジトリ)]
-B -- フローをダウンロード --> C(Raspberry Pi)
+A(ローカルPC<br>+ Sense HATシミュレータ) -- フローをアップロード --> B[(本GitHub<br>リポジトリ)]
+B -- フローをダウンロード --> C(Raspberry Pi<br>+ Sense HAT実機)
 ```
 
 Raspberry Pi上では、Sense HATシミュレータのノードをSense HAT実機用のノードに置き換えた。
 
 ![](piscreen.png)
 
-またRaspberry Piの再起動後、ネットワーク未接続状態でも表示できるようにコンテキストの保存先をローカルファイルシステムに変更した。
+またRaspberry Piの再起動後、ネットワーク未接続状態でも表示できるように、設定ファイルsettings.jsを編集して、コンテキストの保存先をローカルファイルシステムに変更した。
 
 フローを読み込むと、実機でも上手く天気情報が表示されました！
 
